@@ -8,6 +8,11 @@ class FizzBuzzTest(unittest.TestCase):
         result = fizzbuzz.take(3)
         self.assertEqual(result, 'Fizz')
 
+    def test_number_is_divisible_by_5_should_return_fizz(self):
+        fizzbuzz = FizzBuzz()
+        result = fizzbuzz.take(5)
+        self.assertEqual(result, 'Buzz')
+
 
 class FizzBuzz:
     def take(self, number):
